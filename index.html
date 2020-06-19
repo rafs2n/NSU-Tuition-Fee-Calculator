@@ -1,1 +1,108 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang ="en" dir="ltr">
+    
+    <head>
+        <meta charset="utf-8">
+        
+        
+              <!-- Bootstrap core CSS -->
+    
+        <link rel="stylesheet" href="bootstrap.min.css"/>
+        <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">-->
+        
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="//codagecorp.com/wp-content/uploads/North-South-University.png" type="png"/>
+        
+        <title> </title>
+        
+    </head>
+    
+    <body>
+        
+        <div class="jumbotron text-center">
+            <h1 class="display-5">NSU Tuition Fee Calculator</h1>
+        
+        </div>
+        
+<section id="calculator">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <form>
+            <div class="form-row align-items-center">
+              <div class="col-lg-10 col-md-4">
+                <label class="sr-only" for="fullamount">Enter Full Amount</label>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">৳</div>
+                  </div>
+                  <input type="number" class="form-control" id="fullamount" placeholder="Enter Full Amount" />
+                </div>
+              </div>
+              
+              <div class="col-lg-2 col-md-3 col-xs-12 text-center">
+                <button id="submit" type="submit" class="btn btn-info mb-2">Calculate</button>
+              </div>
+            </div>
+            
+          </form>
+        </div>
+      </div>
+
+      
+    </div>
+  </section>
+        
+        
+<section id="results">
+    <div class="container">
+      <div class="row">
+          
+          <div class="col-md-12 mt-5">
+          <div id="" class="card">
+            
+            <div class="card-body">
+              <h5 class="text-center">
+                You have to pay = <span class="waiver">100</span> ৳ &nbsp;
+              </h5>
+            </div>
+          </div>
+        </div>
+          
+          
+        <div class="col-md-12 mt-5">
+          <div id="" class="card">
+            
+            <div class="card-body">
+              <p class="card-text">
+                You are getting <b>20%</b> waiver on your total tuition fees for <b>Summer 2020</b>.
+              </p>
+            </div>
+          </div>
+        </div>
+          
+          <div class="row mx-auto mt-5">
+          <div class="col-md-12">
+            <button class="btn btn-warning" id="reset">Try Again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+        <div class="row mx-auto mt-5"> </div>
+        
+        <footer>
+    <div class="jumbotron text-center">
+      <p>
+        <span class="price">❤</span> Developed by
+        <a href="https://www.facebook.com/rafsan.anip" target="_blank">Abdul Aziz</a>
+      </p>
+    </div>
+  </footer>
+            <script src="main.js" charset="utf-8"></script>
+
+    </body>
+</html>
