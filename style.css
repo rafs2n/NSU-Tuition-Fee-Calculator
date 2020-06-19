@@ -1,4 +1,3 @@
-
 body,
 p,
 h1,
@@ -26,14 +25,40 @@ form {
   box-shadow: none;
 }
 
-.waiver {
-  color: #dc3545;
+#calculator{
+    
+margin-top: 60px;
+}
+
+.jumbotron {
+  padding: 40px 0;
+}
+
+.jumbotron h1 {
+  font-size: 40px;
   font-weight: bold;
+  color: #483D8B;
+    font-family: cursive
+  
+}
+
+.jumbotron h6 {
+    font-size: 18px;
+    font-kerning: normal;
+    color: #483D8B;
+}
+
+.card-body {
+    background: #F0F8FF;
+}
+
+.card-text{
+    color: #483D8B
 }
 
 
 footer {
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 footer .jumbotron {
@@ -42,16 +67,12 @@ footer .jumbotron {
 
 footer .jumbotron p {
   margin-bottom: 0;
+    color: #483D8B
 }
 
 footer a,
 footer a:hover {
   color: #c3232a;
-}
-
-#calculator{
-    
-margin-top: 60px;
 }
 
 .footer {
