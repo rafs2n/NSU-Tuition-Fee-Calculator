@@ -1,0 +1,59 @@
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: sans-serif
+}
+
+
+form {
+  max-width: 620px;
+  margin: auto;
+    padding: 10px
+  
+}
+
+
+
+.form-control:active,
+.form-control:focus {
+  border-color: #87CEFA;
+  box-shadow: none;
+}
+
+.waiver {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+
+footer {
+  margin-top: 100px;
+}
+
+footer .jumbotron {
+  padding: 20px 0;
+}
+
+footer .jumbotron p {
+  margin-bottom: 0;
+}
+
+footer a,
+footer a:hover {
+  color: #c3232a;
+}
+
+#calculator{
+    
+margin-top: 60px;
+}
+
+.footer {
+margin-top: 50px;
+}
