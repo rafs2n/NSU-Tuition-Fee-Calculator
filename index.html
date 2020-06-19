@@ -15,6 +15,7 @@
         
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="//codagecorp.com/wp-content/uploads/North-South-University.png" type="png"/>
+        
         <title>NSU Tuition Fee Calculator</title>
         
     </head>
@@ -23,6 +24,7 @@
         
         <div class="jumbotron text-center">
             <h1 class="display-5">NSU Tuition Fee Calculator</h1>
+            <h6>Please Enter Your Full Amount and Hit the Calculate Button</h6>
         
         </div>
         
@@ -33,19 +35,49 @@
           <form>
             <div class="form-row align-items-center">
               <div class="col-lg-10 col-md-4">
-                <label class="sr-only" for="fullamount">Enter Full Amount</label>
+                <label class="sr-only" for="amount">Enter Full Amount</label>
                 <div class="input-group mb-2">
                   <div class="input-group-prepend">
                     <div class="input-group-text">৳</div>
                   </div>
-                  <input type="number" class="form-control" id="fullamount" placeholder="Enter Full Amount" />
+                  <input type="number" class="form-control" id="amount" placeholder="Enter Full Amount" />
                 </div>
               </div>
               
               <div class="col-lg-2 col-md-3 col-xs-12 text-center">
-                <button id="submit" type="submit" class="btn btn-info mb-2">Calculate</button>
+                
+                  
+                  <button id="button" type="button" class="btn btn-info mb-2" onclick="cal()">Calculate</button>
               </div>
             </div>
+              
+        <!-- ******************************************************************************************* -->
+              <!--Java Script -->
+              
+              <script>    
+              const cal= () =>{
+    
+                let amount = document.getElementById('amount').value;
+                
+                let per = (amount * (20/100)).toFixed(0);
+                  
+                  
+                let waiver = (amount - per);
+                  
+                  
+                  
+                  document.getElementById('waiver').innerHTML= `Your Payable Amount is <b>৳ ${waiver} </b>`
+                  
+                } 
+              
+              
+              const reset=() =>{
+                  
+                  location.reload();
+              }
+              
+              </script>
+        <!-- ******************************************************************************************* -->
             
           </form>
         </div>
@@ -56,17 +88,17 @@
   </section>
         
         
-<section id="results">
+<section id="result">
     <div class="container">
       <div class="row">
           
-          <div class="col-md-12 mt-5">
+          <div class="col-md-12 row-md-35 mt-5">
           <div id="" class="card">
             
             <div class="card-body">
-              <h5 class="text-center">
-                You have to pay = <span class="waiver">100</span> ৳ &nbsp;
-              </h5>
+                <div class="text-center">
+              <h5 class="card-text" id="waiver">Your Payable Amount is ....</h5>
+                </div>
             </div>
           </div>
         </div>
@@ -76,16 +108,18 @@
           <div id="" class="card">
             
             <div class="card-body">
+                <div class="text-center">
               <p class="card-text">
                 You are getting <b>20%</b> waiver on your total tuition fees for <b>Summer 2020</b>.
               </p>
+                </div>
             </div>
           </div>
         </div>
           
           <div class="row mx-auto mt-5">
           <div class="col-md-12">
-            <button class="btn btn-warning" id="reset">Try Again</button>
+            <button class="btn btn-secondary" onclick="reset()" id="reset">Try Again</button>
           </div>
         </div>
       </div>
@@ -101,7 +135,10 @@
       </p>
     </div>
   </footer>
-            <script src="main.js" charset="utf-8"></script>
+            
 
     </body>
 </html>
+
+<!-- ************************** @ All Right Reserved ********************* -->
+<!-- ************************** Contact: 01829739091 ********************* -->
